@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package main;
 
-/**
- *
- * @author Maja
- */
+import controller.Controller;
+import model.Ladak;
+import view.View;
+
 public class Program {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Ladak ladak = new Ladak();
+        View view = new View();
+
+        Controller controller = new Controller(ladak, view);
+        controller.jatekInditasa();
     }
-    
 }
